@@ -1,6 +1,21 @@
+@media (prefers-reduced-motion: no-preference) {
+  * {
+    scroll-behavior: smooth;
+  }
+}
 * {
   min-width: 0;
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+}
+:root {
+  --ratio: 4/3;
+  --primary: #8A1538;
+  --white: #FFFFFF;
+  /* Animation Variables */
+  --nav-cta-1: 50%;
+  --nav-cta-2: 50%;
 }
