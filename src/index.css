@@ -15,7 +15,11 @@
   --ratio: 4/3;
   --primary: #8A1538;
   --white: #FFFFFF;
-  /* Animation Variables */
-  --nav-cta-1: 50%;
-  --nav-cta-2: 50%;
+  --light-gray: #F9FAFB;
+}
+
+@media (min-width: 1440px) {
+  :root {
+    --ratio: 1;
+  }
 }

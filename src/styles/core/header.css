@@ -19,6 +19,9 @@
   left: 50%;
   transform: translateX(-50%);
   height: fit-content;
+  #nav-logo {
+    width: calc(61px * var(--ratio));
+  }
   ul {
     display: flex;
     gap: calc(32px * var(--ratio));
@@ -103,7 +106,7 @@ header {
         border-radius: 8px;
         font-weight: 500;
         background: var(--gradient);
-        background-size: 200% 100%;
+        background-size: 210% 100%;
         background-position: right;
         color: var(--white);
       }

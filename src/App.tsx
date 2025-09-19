@@ -1,4 +1,4 @@
-import { Header, Main, Footer } from "./components/main-components";
+import { Header, Main, Footer } from "./components/core";
 
 function App() {
   return (

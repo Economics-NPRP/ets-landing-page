@@ -1,11 +1,11 @@
-import '../../styles/main-components/header.css'
+import '../../styles/core/header.css'
 
 const Header = () => {
   return (
     <header>
       <nav id="nav-desktop">
         <a href="#nav-desktop">
-          <img src="/logo.svg" width={81} alt="ets-logo" />
+          <img id="nav-logo" src="/logo.svg" alt="ets-logo" />
         </a>
         <ul>
           <li><a href="#home">Features</a></li>
