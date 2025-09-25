@@ -2,6 +2,7 @@
 import "../../styles/main/trading-steps.css"
 import { motion, useScroll, useMotionValueEvent, useTransform } from "motion/react"
 import { useRef } from "react"
+
 function TradingSteps() {
 
   const container = useRef(null)
@@ -17,16 +18,18 @@ function TradingSteps() {
 
   return (
     <section ref={container} id="trading-steps">
-      <h1>Start trading permits<br />in simple steps</h1>
-      <figure id="step">
+      <div id="content-wrapper">
+        <h1>Start trading permits<br />in simple steps</h1>
+        <figure id="step">
 
-      </figure>
-      <motion.div style={{
-        display: 'block',
-        width: scale,
-        height: '10px',
-        backgroundColor: 'blue',
-      }} />
+        </figure>
+        <motion.div style={{
+          display: 'block',
+          width: scale,
+          height: '10px',
+          backgroundColor: 'blue',
+        }} />
+      </div>
     </section>
   )
 }

@@ -18,7 +18,7 @@
   --light-gray: #F9FAFB;
 }
 
-@media (min-width: 1440px) {
+@media (min-width: 1200px) {
   :root {
     --ratio: 1;
   }
