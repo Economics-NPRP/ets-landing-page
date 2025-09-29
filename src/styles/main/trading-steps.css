@@ -10,7 +10,7 @@
       font-size: calc(56px * var(--ratio));
       font-weight: 700;
       color: var(--primary);
-      padding: 96px 64px;
+      padding: 80px 64px;
     }
     .step {
       padding: 48px 64px;
@@ -77,7 +77,8 @@
       display: flex;
       position: relative;
       gap: 12px;
-      top: calc(440px + 32px);
+      top: 0;
+      padding-top: calc(440px + 32px);
       width: 80%;
       margin: auto;
       .progress-bar-wrapper {

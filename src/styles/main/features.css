@@ -1,0 +1,29 @@
+#features {
+  position: relative;
+  margin-top: 96px;
+  h1 {
+    text-align: center;
+    font-size: calc(56px * var(--ratio));
+    font-weight: 700;
+    color: var(--primary);
+    padding: 80px 64px;
+  }
+  #features-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    .feature {
+      .icon-background {
+        width: calc(64px * var(--ratio));
+        height: calc(64px * var(--ratio));
+        border-radius: 12px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: rgba(112, 26, 69, .1);
+        img {
+          height: calc(32px * var(--ratio));
+        }
+      }
+    }
+  }
+}

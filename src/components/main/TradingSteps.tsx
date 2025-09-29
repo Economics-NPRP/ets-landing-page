@@ -1,6 +1,6 @@
 'use client'
 import "../../styles/main/trading-steps.css"
-import { steps } from "../main/content"
+import { TradingStepsContent } from "../main/content"
 import { motion, cubicBezier, useScroll, useMotionValueEvent, useTransform } from "motion/react"
 import { useRef, useState } from "react"
 
@@ -22,7 +22,6 @@ function TradingSteps() {
     } else if (value > .75) {
       setLengths(() => [1, 1, 1, (value-.75)*4])
     }
-    console.log(lengths)
   })
   // Content
   const grayFilter = "brightness(0) saturate(100%) invert(83%) sepia(0%) saturate(3240%) hue-rotate(324deg) brightness(86%) contrast(92%)"
@@ -43,7 +42,7 @@ function TradingSteps() {
       <div id="content-wrapper">
         <h1>Start trading permits<br />in simple steps</h1>
         <div style={{ position: 'relative' }}> {/* Steps container */}
-          {steps.map((step, order) => (
+          {TradingStepsContent.steps.map((step, order) => (
             <motion.figure
               key={order+"step"}
               style={{ opacity: opacities[order] }} 
@@ -63,7 +62,7 @@ function TradingSteps() {
           ))}
         </div>
         <div id="progress-bars">
-          {steps.map((step, order) => (
+          {TradingStepsContent.steps.map((step, order) => (
             <div key={order+"pb-wrapper"} className="progress-bar-wrapper">
               <div className="progress-bar" key={order+"pb"}>
                 <div key={order} className="color" style={{

@@ -1,10 +1,14 @@
 import '../../styles/core/main.css'
-import TradingSteps from '../main/TradingSteps'
+import * as MainComponent from '../main'
 
 const Main = () => {
   return (
     <main>
-      <TradingSteps />
+      <MainComponent.TradingSteps />
+      <MainComponent.Features />
+      <MainComponent.Industries />
+      <MainComponent.Benefits />
+      <MainComponent.FinalCTA />
     </main>
   )
 }
