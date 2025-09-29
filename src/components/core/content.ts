@@ -26,7 +26,9 @@ export const FooterContent = {
     }
   ],
   contactUs: [
-
+    "hello@ETS.com",
+    "+974 1234 5678",
+    "Doha, Qatar"
   ],
   logo: "/logo.svg"
 }

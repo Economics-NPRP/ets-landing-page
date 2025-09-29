@@ -1,15 +1,15 @@
 const ContactUs = ({ content }: { content: Record<string, any> }) => {
   return (
-    <>
+    <div id="contact-us">
       <h4 className="footer-title">Contact Us</h4>
       <ul>
-        {content.contactUs.map((link: { label: string; url: string }) => (
-          <li key={link.url}>
-            <a href={link.url}>{link.label}</a>
+        {content.contactUs.map((contact: string) => (
+          <li key={contact}>
+            <span>{contact}</span>
           </li>
         ))}
       </ul>
-    </>
+    </div>
   )
 }
 

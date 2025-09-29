@@ -39,21 +39,21 @@ export const FeaturesContent = {
       icon: "/main/features/time.svg"
     },
     {
-      title: "Transparent Auctions",
-      description: "Real-time bidding with instant updates and live market data.",
-      icon: "/main/features/time.svg"
+      title: "Smart Dashboards",
+      description: "Track permits, transactions, andcompliance all in one place.",
+      icon: "/main/features/statistics.svg"
     }, {
-      title: "Transparent Auctions",
-      description: "Real-time bidding with instant updates and live market data.",
-      icon: "/main/features/time.svg"
+      title: "Advanced Filtering",
+      description: "Find permits by category, sector, region, or custom criteria.",
+      icon: "/main/features/filter.svg"
     }, {
-      title: "Transparent Auctions",
-      description: "Real-time bidding with instant updates and live market data.",
-      icon: "/main/features/time.svg"
+      title: "Analytics & Reports",
+      description: "Get insights and market trends for smarter investment decisions.",
+      icon: "/main/features/analytics.svg"
     }, {
-      title: "Transparent Auctions",
-      description: "Real-time bidding with instant updates and live market data.",
-      icon: "/main/features/time.svg"
+      title: "Secure & Compliant",
+      description: "Fully aligned with government regulations and industry standards.",
+      icon: "/main/features/secure.svg"
     },
   ]
 }
@@ -65,20 +65,20 @@ export const IndustriesContent = {
       name: "Energy",
       background: "/main/industries/energy.png",
     }, {
-      name: "Energy",
-      background: "/main/industries/energy.png",
+      name: "Industry",
+      background: "/main/industries/industry.png",
     }, {
-      name: "Energy",
-      background: "/main/industries/energy.png",
+      name: "Transportation",
+      background: "/main/industries/transport.png",
     }, {
-      name: "Energy",
-      background: "/main/industries/energy.png",
+      name: "Buildings",
+      background: "/main/industries/buildings.png",
     }, {
-      name: "Energy",
-      background: "/main/industries/energy.png",
+      name: "Agriculture",
+      background: "/main/industries/agriculture.png",
     }, {
-      name: "Energy",
-      background: "/main/industries/energy.png",
+      name: "Waste",
+      background: "/main/industries/waste.png",
     }
   ]
 }

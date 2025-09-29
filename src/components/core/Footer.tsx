@@ -1,4 +1,4 @@
-import { Summary, QuickLinks } from "../footer"
+import { Summary, QuickLinks, ContactUs } from "../footer"
 import { FooterContent } from "./content"
 import "../../styles/core/footer.css"
 
@@ -9,7 +9,8 @@ const Footer = () => {
       <div id="links-container">
         <Summary content={FooterContent} />
         <QuickLinks content={FooterContent} /> 
-        {/* <ContactUs /> */}
+        <ContactUs content={FooterContent} />
+        <img src={FooterContent.logo} height={110} alt="ets-logo" />
       </div>
       <div id="copyright">
         <span>© 2025 ETS. All rights reserved.</span>
