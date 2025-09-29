@@ -29,7 +29,7 @@ export const TradingStepsContent = {
 }
 
 export const FeaturesContent = {
-  title: "All you need for confident emission trading",
+  title: ["All you need for confident", " emission trading"],
   features: [
     {
       title: "Transparent Auctions",

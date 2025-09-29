@@ -16,6 +16,7 @@
   --primary: #8A1538;
   --white: #FFFFFF;
   --light-gray: #F9FAFB;
+  --gray: #656565;
 }
 
 @media (min-width: 1200px) {
