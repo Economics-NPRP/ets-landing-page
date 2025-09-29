@@ -1,3 +1,5 @@
+import { image } from "motion/react-client"
+
 export const TradingStepsContent = {
   title: ["Start trading permits", "in simple steps"],
   steps: [
@@ -78,5 +80,28 @@ export const IndustriesContent = {
       name: "Energy",
       background: "/main/industries/energy.png",
     }
+  ]
+}
+
+export const BenefitsContent = {
+  title: "Benefits for Everyone",
+  image: "/main/benefits/line.svg",
+  benefits: [
+    {
+      title: "For Governments",
+      icon: "/main/benefits/government.svg",
+      short: "Streamlined allocation & oversight",
+      long: "Efficient permit distribution, real-time market monitoring, and comprehensive regulatory compliance tracking."
+    }, {
+      title: "For Governments",
+      icon: "/main/benefits/government.svg",
+      short: "Streamlined allocation & oversight",
+      long: "Efficient permit distribution, real-time market monitoring, and comprehensive regulatory compliance tracking."
+    }, {
+      title: "For Governments",
+      icon: "/main/benefits/government.svg",
+      short: "Streamlined allocation & oversight",
+      long: "Efficient permit distribution, real-time market monitoring, and comprehensive regulatory compliance tracking."
+    },
   ]
 }

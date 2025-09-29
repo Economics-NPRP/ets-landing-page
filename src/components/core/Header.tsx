@@ -8,10 +8,10 @@ const Header = () => {
           <img id="nav-logo" src="/logo.svg" alt="ets-logo" />
         </a>
         <ul>
-          <li><a href="#home">Features</a></li>
-          <li><a href="#about">Industries</a></li>
-          <li><a href="#services">Benefits</a></li>
-          <li><a href="#contact" className="nav-cta">Sign In</a></li>
+          <li><a href="#features">Features</a></li>
+          <li><a href="#industries">Industries</a></li>
+          <li><a href="#benefits">Benefits</a></li>
+          <li><a href="https://platform.ets-gcc.org/login" target='_blank' className="nav-cta">Sign In</a></li>
         </ul>
       </nav>
       <section id='header-text'>
@@ -19,8 +19,8 @@ const Header = () => {
         <p>ETS connects governments, businesses, and stakeholders through a modern
           platform<br/>that simplifies permit allocation, bidding, and compliance.</p>
         <div id="header-cta-group">
-          <a href="#get-started" className="header-cta-primary">Get Started</a>
-          <a href="#learn-more" className="header-cta-secondary">Learn More</a>
+          <a href="#" className="header-cta-primary">Get Started</a>
+          <a href="#" className="header-cta-secondary">Learn More</a>
         </div>
       </section>
     </header>
