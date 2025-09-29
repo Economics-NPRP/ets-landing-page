@@ -18,12 +18,14 @@
       left: 50%;
       border-radius: 32px;
       transform: translateX(-50%);
-      height: fit-content;
+      height: 440px;
       width: 90%;
+      gap: 48px;
       background-color: #F6F6F6;
       display: flex;
       justify-content: space-between;
       figcaption {
+        width: 50%;
         display: flex;
         flex-direction: column;
         justify-content: space-between;
@@ -59,9 +61,45 @@
         }
       }
       .animation-container {
+        width: 50%;
         background-color: var(--primary);
         border-radius: 24px;
-        padding: 32px;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        padding: 0px 24px;
+        img {
+          width: 100%;
+        }
+      }
+    }
+    #progress-bars {
+      display: flex;
+      position: relative;
+      gap: 12px;
+      top: calc(440px + 32px);
+      width: 80%;
+      margin: auto;
+      .progress-bar-wrapper {
+        width: 100%;
+        .progress-bar {
+          border-radius: 99px;
+          height: 10px;
+          position: relative;
+          margin-bottom: 8px;
+          background-color: #F6F6F6;
+          .color {
+            border-radius: inherit;
+            background-color: var(--primary);
+            position: absolute;
+            height: 100%;
+          }
+        }
+        figure {
+          display: flex;
+          gap: 12px;
+          align-items: center;
+        }
       }
     }
   }

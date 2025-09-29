@@ -1,5 +1,4 @@
 'use client'
-import { div } from "motion/react-client"
 import "../../styles/main/trading-steps.css"
 import { steps } from "../main/content"
 import { motion, cubicBezier, useScroll, useMotionValueEvent, useTransform } from "motion/react"
@@ -26,17 +25,17 @@ function TradingSteps() {
     console.log(lengths)
   })
   // Content
+  const grayFilter = "brightness(0) saturate(100%) invert(83%) sepia(0%) saturate(3240%) hue-rotate(324deg) brightness(86%) contrast(92%)"
+  const primaryFilter = "brightness(0) saturate(100%) invert(13%) sepia(30%) saturate(7091%) hue-rotate(326deg) brightness(93%) contrast(96%)"
 
   // Animation
-  const scale = useTransform(scrollYProgress, [0, 1], [0, 100])
-
-  const easeOutTemplate = cubicBezier(0, .72, .27, 1.01)
+  const easeOutTemplate = cubicBezier(0, 1.08, 0, 1)
 
   const opacities = [
-    useTransform(scrollYProgress, [0, 0.25, 0.5], [1, 1, 0]),
-    useTransform(scrollYProgress, [0.25, 0.5, 0.75], [0, 1, 0]),
-    useTransform(scrollYProgress, [0.5, 0.75, 1], [0, 1, 0]),
-    useTransform(scrollYProgress, [0.75, 1], [0, 1]),
+    useTransform(scrollYProgress, [0, 0.25, 0.5], [1, 1, 0], {ease: easeOutTemplate}),
+    useTransform(scrollYProgress, [0.25, 0.5, 0.75], [0, 1, 0], {ease: easeOutTemplate}),
+    useTransform(scrollYProgress, [0.5, 0.75, 1], [0, 1, 0], {ease: easeOutTemplate}),
+    useTransform(scrollYProgress, [0.75, 1], [0, 1], {ease: easeOutTemplate}),
   ]
 
   return (
@@ -64,24 +63,25 @@ function TradingSteps() {
           ))}
         </div>
         <div id="progress-bars">
-
+          {steps.map((step, order) => (
+            <div key={order+"pb-wrapper"} className="progress-bar-wrapper">
+              <div className="progress-bar" key={order+"pb"}>
+                <div key={order} className="color" style={{
+                  display: 'block',
+                  width: lengths[order]*100+"%"
+                }} />
+              </div>
+              <figure>
+                <img style={{
+                  ...(lengths[order] > 0 ? { filter: primaryFilter } : { filter: grayFilter })
+                }} src={step.icon} alt={step.title}  />
+                <figcaption style={{
+                  ...(lengths[order] > 0 ? { color: 'var(--primary)' } : { color: 'gray' })
+                }}>{step.title}</figcaption>
+              </figure>
+            </div>
+          ))}
         </div>
-        {steps.map((step, order) => (
-          <div key={order+"pb-wrapper"} className="progress-bar-wrapper">
-            <div className="progress-bar" key={order+"pb"}>
-              <motion.div key={order} style={{
-                display: 'block',
-                width: scale,
-                height: '10px',
-                backgroundColor: 'blue',
-              }} />
-            </div> 
-            <figure>
-              <img src={step.icon} alt={step.title}  />
-              <figcaption>{step.title}</figcaption>
-            </figure>
-          </div>
-        ))}
       </div>
     </section>
   )
