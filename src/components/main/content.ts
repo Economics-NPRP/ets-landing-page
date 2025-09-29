@@ -105,3 +105,9 @@ export const BenefitsContent = {
     },
   ]
 }
+
+export const FinalCTAContent = {
+  title: ["Start Trading Permits", "with Confidence"],
+  description: ["Join thousands of organizations already using ETS to streamline", "their emission trading processes"],
+  cta: "Register Now"
+}

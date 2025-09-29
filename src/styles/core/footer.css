@@ -1,0 +1,22 @@
+footer {
+  background-color: var(--primary);
+  color: white;
+  .footer-title {
+    font-size: calc(18px * var(--ratio));
+    font-weight: 600;
+  }
+  #links-container {
+    #summary {
+      display: flex;
+      flex-direction: column;
+      gap: calc(18px * var(--ratio));
+      p {
+        font-size: calc(14px * var(--ratio));
+      }
+      #social-links {
+        display: flex;
+        gap: calc(18px * var(--ratio));
+      }
+    }
+  }
+}

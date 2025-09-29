@@ -1,0 +1,25 @@
+#finalcta {
+  text-align: center;
+  margin-bottom: 48px;
+  h1 {
+    text-align: center;
+    font-size: calc(56px * var(--ratio));
+    font-weight: 700;
+    color: var(--primary);
+    padding: 80px 64px 24px 64px;
+  }
+  p {
+    color: var(--gray);
+  }
+  a {
+    all: unset;
+    margin-top: 48px;
+    display: inline-block;
+    cursor: pointer;
+    color: white;
+    background-color: var(--primary);
+    border-radius: 99px;
+    padding: 12px 48px;
+    font-weight: 400;
+  }
+}
