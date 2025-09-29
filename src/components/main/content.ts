@@ -55,3 +55,28 @@ export const FeaturesContent = {
     },
   ]
 }
+
+export const IndustriesContent = {
+  title: "Industries We Target",
+  industries: [
+    {
+      name: "Energy",
+      background: "/main/industries/energy.png",
+    }, {
+      name: "Energy",
+      background: "/main/industries/energy.png",
+    }, {
+      name: "Energy",
+      background: "/main/industries/energy.png",
+    }, {
+      name: "Energy",
+      background: "/main/industries/energy.png",
+    }, {
+      name: "Energy",
+      background: "/main/industries/energy.png",
+    }, {
+      name: "Energy",
+      background: "/main/industries/energy.png",
+    }
+  ]
+}

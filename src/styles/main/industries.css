@@ -1,0 +1,30 @@
+#industries {
+  h1 {
+    text-align: center;
+    font-size: calc(56px * var(--ratio));
+    font-weight: 700;
+    color: var(--primary);
+    padding: 80px 64px;
+  }
+  #industries-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    width: fit-content;
+    margin: auto;
+    gap: 32px;
+    .industry {
+      border-radius: 36px;
+      width: 400px;
+      height: 420px;
+      position: relative;
+      figcaption {
+        font-size: 36px;
+        text-align: center;
+        font-weight: bold;
+        color: white;
+        position: relative;
+        top: calc(420px - 96px);
+      }
+    }
+  }
+}
