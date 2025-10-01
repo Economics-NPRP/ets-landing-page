@@ -13,9 +13,10 @@
   #features-container {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: 32px;
+    column-gap: 48px;
+    row-gap: 64px;
     background-color: white;
-    padding: 40px;
+    padding: 56px;
     border-radius: 24px;
     width: fit-content;
     margin: auto;
@@ -23,7 +24,7 @@
       display: flex;
       flex-direction: column;
       gap: calc(24px * var(--ratio));
-      width: 400px;
+      width: min(350px, 100%);
       .feature-text {
         display: flex;
         flex-direction: column;
@@ -48,6 +49,34 @@
         background-color: rgba(112, 26, 69, .1);
         img {
           height: calc(32px * var(--ratio));
+        }
+      }
+    }
+  }
+}
+@media (max-width: 1200px) {
+  #features {
+    #features-container {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+}
+@media (max-width: 900px) {
+  #features {
+    h1 {
+      font-size: 28px;
+      .new-line { display: none; }
+    }
+    #features-container {
+      grid-template-columns: repeat(1, 1fr);
+      .feature{
+        .feature-text {
+          h3 {
+            font-size: 24px;
+          }
+          p {
+            font-size: 16px;
+          }
         }
       }
     }

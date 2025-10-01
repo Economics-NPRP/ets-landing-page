@@ -1,5 +1,3 @@
-import { image } from "motion/react-client"
-
 export const TradingStepsContent = {
   title: ["Start trading permits", "in simple steps"],
   steps: [
@@ -93,15 +91,15 @@ export const BenefitsContent = {
       short: "Streamlined allocation & oversight",
       long: "Efficient permit distribution, real-time market monitoring, and comprehensive regulatory compliance tracking."
     }, {
-      title: "For Governments",
-      icon: "/main/benefits/government.svg",
-      short: "Streamlined allocation & oversight",
-      long: "Efficient permit distribution, real-time market monitoring, and comprehensive regulatory compliance tracking."
+      title: "For Businesses",
+      icon: "/main/benefits/people.svg",
+      short: "Fair access & reduced compliance hassle",
+      long: "Equal opportunity bidding, simplified compliance processes, and transparent market pricing mechanisms."
     }, {
-      title: "For Governments",
-      icon: "/main/benefits/government.svg",
-      short: "Streamlined allocation & oversight",
-      long: "Efficient permit distribution, real-time market monitoring, and comprehensive regulatory compliance tracking."
+      title: "For Stakeholders",
+      icon: "/main/benefits/eye.svg",
+      short: "Transparent, competitive, and data-driven auctions",
+      long: "Complete market visibility, historical data access, and analytical tools for informed decision making."
     },
   ]
 }

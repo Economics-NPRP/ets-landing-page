@@ -9,15 +9,20 @@
   }
   #line {
     position: absolute;
+    width: 100%;
   }
   #benefits-container {
     position: relative;
     z-index: 2;
     display: flex;
+    flex-wrap: wrap;
     gap: 32px;
     width: fit-content;
+    justify-content: center;
+    padding: 0px 48px;
     margin: auto;
     .benefit {
+      min-width: 400px;
       background-color: var(--light-gray);
       display: flex;
       flex-direction: column;
@@ -34,6 +39,7 @@
         display: flex;
         justify-content: center;
         align-items: center;
+        margin-bottom: 36px;
         img {
           height: 40px;
         }
@@ -58,6 +64,20 @@
           font-size: calc(14px * var(--ratio));
         }
       }
+    }
+  }
+}
+@media (max-width: 1200px) {
+  #benefits {
+    #line {
+      top: calc(50% + 12px);
+    }
+  }
+}
+@media (max-width: 900px) {
+  #benefits {
+    #benefits-container {
+      grid-template-columns: repeat(1, 1fr);
     }
   }
 }

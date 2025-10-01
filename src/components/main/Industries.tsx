@@ -1,3 +1,4 @@
+import { useState } from "react"
 import "../../styles/main/industries.css"
 import { IndustriesContent } from "./content"
 
@@ -8,7 +9,9 @@ const Industries = () => {
       <div id="industries-container">
         {IndustriesContent.industries.map((industry, index) => (
           <figure key={index + "industry"} className="industry" style={{
-            background: `url(${industry.background}), linear-gradient(181deg, rgba(0, 0, 0, 0.00) 18.07%, rgba(0, 0, 0, 0.62) 95.71%)` }}>
+            background: `url(${industry.background}) no-repeat center/cover`,
+          }}>
+            <div className="gradient"></div>
             <figcaption>{industry.name}</figcaption>
           </figure>
         ))}

@@ -3,7 +3,7 @@ import { FeaturesContent } from "../main/content"
 const Features = () => {
   return (
     <section id="features">
-      <h1>{FeaturesContent.title[0]} <br /> {FeaturesContent.title[1]}</h1>
+      <h1>{FeaturesContent.title[0]} <br className="new-line" /> {FeaturesContent.title[1]}</h1>
       <div id="features-container">
         {FeaturesContent.features.map((feature, index) => (
           <figure key={index+"feature"} className="feature">

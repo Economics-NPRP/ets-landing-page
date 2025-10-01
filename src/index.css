@@ -19,7 +19,7 @@
   --gray: #656565;
 }
 
-@media (min-width: 1200px) {
+@media (max-width: 1800px) {
   :root {
     --ratio: 1;
   }
