@@ -76,8 +76,28 @@
 }
 @media (max-width: 900px) {
   #benefits {
+    h1 {
+      font-size: 28px;
+      padding: 64px 12px 48px 12px;
+    }
     #benefits-container {
       grid-template-columns: repeat(1, 1fr);
+      width: 100%;
+      .benefit {
+        min-width: 300px;
+        max-width: 100%;
+        figcaption {
+          h3 {
+            font-size: 20px;
+          }
+          .short-description {
+            font-size: 16px;
+          }
+          .long-description {
+            font-size: 14px;
+          }
+        }
+      }
     }
   }
 }

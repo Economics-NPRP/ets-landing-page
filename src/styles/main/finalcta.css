@@ -24,3 +24,11 @@
     font-weight: 400;
   }
 }
+
+@media (max-width: 800px) {
+  #finalcta {
+    h1 {
+      font-size: 28px;
+    }
+  }
+}

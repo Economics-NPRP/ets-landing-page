@@ -165,7 +165,7 @@
       .step {
         padding: 0;
         justify-content: space-between;
-        height: calc(60dvh);
+        height: calc(55dvh);
         gap: 0;
         figcaption {
           padding: 32px 32px 0px 32px;
@@ -178,7 +178,7 @@
         }
       }
       #progress-bars {
-        margin-top: 128px;
+        margin-top: 80px;
         grid-template-columns: repeat(2, 1fr);
       }
     }
