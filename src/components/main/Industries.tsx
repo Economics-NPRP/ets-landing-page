@@ -1,4 +1,3 @@
-import { useState } from "react"
 import "../../styles/main/industries.css"
 import { IndustriesContent } from "./content"
 
