@@ -10,7 +10,7 @@
       font-size: calc(56px * var(--ratio));
       font-weight: 700;
       color: var(--primary);
-      padding: 80px 64px;
+      padding: 64px;
     }
     .step {
       padding: 48px 64px;
@@ -70,9 +70,6 @@
         padding: 24px 24px;
         img {          
           height: 100%; 
-        }
-        &:hover {
-          background-color: blue !important;
         }
       }
     }

@@ -8,7 +8,7 @@
     font-size: calc(56px * var(--ratio));
     font-weight: 700;
     color: var(--primary);
-    padding: 80px 64px;
+    padding: 64px;
   }
   #features-container {
     display: grid;

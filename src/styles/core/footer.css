@@ -26,6 +26,9 @@ footer {
         gap: calc(18px * var(--ratio));
       }
     }
+    #footer-logo {
+      display: inline-block;
+    }
     #quick-links, #contact-us {
       .footer-title {
         margin-bottom: 18px;
@@ -60,6 +63,23 @@ footer {
 
         }
       }
+    }
+  }
+}
+@media (max-width: 500px) {
+  footer {
+    padding: 32px;
+    margin-bottom: 144px;
+    #links-container {
+      flex-direction: column;
+      gap: 24px;
+      #footer-logo {
+        display: none;
+      }
+    }
+    #copyright {
+      flex-direction: column;
+      gap: 24px;
     }
   }
 }

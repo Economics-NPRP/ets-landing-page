@@ -2,7 +2,7 @@ import '../../styles/core/header.css'
 import { useState } from 'react'
 
 const Header = () => {
-  const [isMobileMenuOpen, setMobileMenuOpen] = useState(true)
+  const [isMobileMenuOpen, setMobileMenuOpen] = useState(false)
 
   const toggleMobileMenu = () => {
     setMobileMenuOpen(!isMobileMenuOpen)

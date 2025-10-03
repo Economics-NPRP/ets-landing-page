@@ -30,5 +30,11 @@
     h1 {
       font-size: 28px;
     }
+    p {
+      padding: 0px 10%;
+      br {
+        display: none;
+      }
+    }
   }
 }

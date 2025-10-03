@@ -11,13 +11,13 @@ export const TradingStepsContent = {
       "title": "Browse Auctions",
       "description": "Explore auctions related to your category, sector and industry using our advanced search system.",
       "icon": "/main/trading-steps/browse.svg",
-      "background": "/main/trading-steps/2.png"
+      "background": "/main/trading-steps/3.png"
     },
     {
       "title": "Bid in Real-Time",
       "description": "Participate in live auctions securely.",
       "icon": "/main/trading-steps/bid.svg",
-      "background": "/main/trading-steps/3.png"
+      "background": "/main/trading-steps/2.png"
     },
     {
       "title": "Manage & Track",

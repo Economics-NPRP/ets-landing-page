@@ -10,7 +10,7 @@ const Footer = () => {
         <Summary content={FooterContent} />
         <QuickLinks content={FooterContent} /> 
         <ContactUs content={FooterContent} />
-        <img src={FooterContent.logo} height={110} alt="ets-logo" />
+        <img id="footer-logo" src={FooterContent.logo} height={110} alt="ets-logo" />
       </div>
       <div id="copyright">
         <span>© 2025 ETS. All rights reserved.</span>
