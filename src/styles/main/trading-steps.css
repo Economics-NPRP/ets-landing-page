@@ -10,7 +10,7 @@
       font-size: calc(56px * var(--ratio));
       font-weight: 700;
       color: var(--primary);
-      padding: 64px;
+      padding: 56px;
     }
     .step {
       padding: 48px 64px;
@@ -70,6 +70,7 @@
         padding: 24px 24px;
         img {          
           height: 100%; 
+          border-radius: 12px;
         }
       }
     }
@@ -106,23 +107,23 @@
     }
   }
 }
-@media (max-width: 1200px) {
+@media (max-width: 1100px) and (max-height: 1400px) {
   #trading-steps {
     height: 300dvh;
     #content-wrapper {
       .step {
         flex-direction: column;
-        height: 500px;
+        height: 850px;
         figcaption {
           .step-text-container {
             .step-number {
-              font-size: 18px;
+              font-size: 28px;
             }
             .step-title {
-              font-size: 20px;
+              font-size: 32px;
             }
             .step-description {
-              font-size: 14px;
+              font-size: 16px;
             }
           }
           width: 100%;
@@ -133,6 +134,7 @@
         }
         .animation-container {
           width: 100%;
+          height: fit-content;
           padding: 12px;
           img {
             border-radius: 12px;
@@ -141,13 +143,57 @@
         }
       }
       #progress-bars {
-        margin-top: calc(96px + 24px);
+        margin-top: 0px;
+        padding-top: calc(850px + 24px);
         grid-template-columns: repeat(2, 1fr);
       }
     }
   }
 }
-@media (max-width: 900px) {
+@media (max-width: 1100px) and (max-height: 800px) {
+  #trading-steps {
+    #content-wrapper {
+      h1 {
+        padding: 40px;
+      }
+      .step {
+        height: 350px;
+        flex-direction: row;
+      }
+      #progress-bars {
+        padding-top: calc(350px + 32px);
+      }
+    }
+  }
+}
+@media (max-width: 850px) and (max-height: 1400px) {
+  #trading-steps > #content-wrapper {
+    .step {
+      height: 750px;
+    }
+    #progress-bars {
+      padding-top: calc(750px + 24px);
+    }
+  }
+}
+@media (max-width: 800px) {
+  #trading-steps {
+    #content-wrapper {
+      h1 {
+        font-size: 48px;
+        padding: 32px;
+      }
+      .step {
+        padding: 32px 64px;
+        height: 700px;
+      }
+      #progress-bars {
+        padding-top: calc(700px + 18px);
+      }
+    }
+  }
+}
+@media (max-width: 500px) {
   #trading-steps {
     #content-wrapper {
       top: 0;
@@ -162,7 +208,8 @@
       .step {
         padding: 0;
         justify-content: space-between;
-        height: calc(55dvh);
+        flex-direction: column;
+        height: 600px;
         gap: 0;
         figcaption {
           padding: 32px 32px 0px 32px;
@@ -175,12 +222,49 @@
         }
       }
       #progress-bars {
-        margin-top: 80px;
+        padding-top: calc(600px + 32px);
         grid-template-columns: repeat(2, 1fr);
       }
     }
   }
 }
-@media (max-width: 300px) {
-
+@media (max-width: 400px) {
+  #trading-steps {
+    #content-wrapper {
+      .step {
+        height: 530px;
+        figcaption > .step-text-container {
+          .step-number {
+            font-size: 20px;
+          }
+          .step-title {
+            font-size: 28px;
+          }
+        }
+      }
+      #progress-bars {
+        padding-top: calc(530px + 24px);
+      }
+    }
+  }
+}
+@media (max-width: 400px) and (max-height: 750px) {
+  #trading-steps {
+    #content-wrapper {
+      .step {
+        height: 350px;
+        figcaption {
+          .step-description {
+            display: none;
+          }
+          .guide-me-through {
+            display: none;
+          }
+        }
+      }
+      #progress-bars {
+        padding-top: calc(350px + 24px);
+      }
+    }
+  }
 }

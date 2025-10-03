@@ -56,14 +56,14 @@
   }
 }
 
-@media (max-width: 1200px) {
+@media (max-width: 1300px) {
   #industries {
     #industries-container {
       grid-template-columns: repeat(2, 1fr);
     }
   }
 }
-@media (max-width: 500px) {
+@media (max-width: 850px) {
   #industries {
     h1 {
       font-size: 28px;
@@ -71,8 +71,13 @@
     }
     #industries-container {
       grid-template-columns: repeat(1, 1fr);
-      .industry > figcaption {
-        font-size: 28px;
+      width: 100%;
+      padding: 0px 24px;
+      .industry{
+        width: 100%;
+        figcaption {
+          font-size: 28px;
+        }
       }
     }
   }
