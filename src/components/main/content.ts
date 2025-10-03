@@ -38,7 +38,7 @@ export const FeaturesContent = {
     },
     {
       title: "Smart Dashboards",
-      description: "Track permits, transactions, andcompliance all in one place.",
+      description: "Track permits, transactions, and compliance all in one place.",
       icon: "/main/features/statistics.svg"
     }, {
       title: "Advanced Filtering",
@@ -98,7 +98,7 @@ export const BenefitsContent = {
     }, {
       title: "For Stakeholders",
       icon: "/main/benefits/eye.svg",
-      short: "Transparent, competitive, and data-driven auctions",
+      short: "Transparent, competitive, and science-based auctions",
       long: "Complete market visibility, historical data access, and analytical tools for informed decision making."
     },
   ]

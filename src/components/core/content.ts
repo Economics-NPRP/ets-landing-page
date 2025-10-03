@@ -26,8 +26,8 @@ export const FooterContent = {
     }
   ],
   contactUs: [
-    "hello@ETS.com",
-    "+974 1234 5678",
+    "contact@ets-gcc.org",
+    "+974 4403 6498",
     "Doha, Qatar"
   ],
   logo: "/logo.svg"

@@ -20,9 +20,13 @@
 }
 
 h1, h2, h3, h4 {
-  font-family: 'Source Serif Pro', sans-serif;
+  font-family: 'Source Serif Pro', serif;
   font-optical-sizing: auto;
   font-style: normal;
+  
+}
+h1 {
+  line-height: 1.2;
 }
 
 @media (max-width: 1800px) {

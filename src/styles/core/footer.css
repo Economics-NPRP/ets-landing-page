@@ -13,6 +13,7 @@ footer {
     display: flex;
     justify-content: space-between;
     margin-bottom: 56px;
+    gap: 24px;
     #summary {
       display: flex;
       width: 300px;
@@ -75,10 +76,10 @@ footer {
     }
   }
 }
-@media (max-width: 500px) {
+@media (max-width: 900px) {
   footer {
     padding: 32px;
-    margin-bottom: 144px;
+    margin-bottom: 90px;
     #links-container {
       flex-direction: column;
       gap: 24px;
