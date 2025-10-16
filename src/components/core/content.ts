@@ -26,7 +26,7 @@ export const FooterContent = {
     }
   ],
   contactUs: [
-    "contact@ets-gcc.org",
+    "admin@ets-gcc.org",
     "+974 4403 6498",
     "Doha, Qatar"
   ],
