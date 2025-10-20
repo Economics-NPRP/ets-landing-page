@@ -1,4 +1,10 @@
-const Summary = ({ content }: {content: Record<string, any>}) => {
+import type { FooterContentShape } from "../core/content"
+
+type SummaryProps = {
+  content: Pick<FooterContentShape, "summary">
+}
+
+const Summary = ({ content }: SummaryProps) => {
   return (
     <div id="summary">
       <h4 style={{ fontWeight: "700" }}>{content.summary.title}</h4>
