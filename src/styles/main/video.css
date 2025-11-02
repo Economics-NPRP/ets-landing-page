@@ -1,0 +1,37 @@
+#introduction {
+  > h1 {
+    text-align: center;
+    font-size: calc(56px * var(--ratio));
+    font-weight: 700;
+    color: var(--primary);
+    padding: 56px;
+  }
+  #video-iframe {
+    width: min(90%, 800px);
+    height: fit-content;
+    margin: auto;
+    border: 12px solid var(--primary);
+    border-radius: 8px;
+    margin-bottom: 24px;
+  }
+}
+@media (max-width: 800px) {
+  #introduction {
+    h1 {
+      font-size: 48px;
+      padding: 32px;
+    }
+  }
+}
+@media (max-width: 500px) {
+  #introduction {
+    h1 {
+      font-size: 28px;
+      .new-line { display: none; }
+      padding: 36px 48px;
+    }
+    #video-iframe {
+      border: 8px solid var(--primary);
+    }
+  }
+}

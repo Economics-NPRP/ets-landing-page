@@ -4,6 +4,7 @@ import * as MainComponent from '../main'
 const Main = () => {
   return (
     <main>
+      <MainComponent.Video />
       <MainComponent.TradingSteps />
       <MainComponent.Features />
       <MainComponent.Industries />
