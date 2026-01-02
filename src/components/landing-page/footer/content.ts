@@ -32,4 +32,3 @@ export const FooterContent = {
   ],
   logo: "/logo.svg"
 }
-export type FooterContentShape = typeof FooterContent
