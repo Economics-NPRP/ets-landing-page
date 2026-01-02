@@ -9,7 +9,7 @@ const ContactUs = ({ content }: ContactUsProps) => {
     <div id="contact-us">
       <h4 className="footer-title">Contact Us</h4>
       <ul>
-  {content.contactUs.map((contact) => (
+        {content.contactUs.map((contact) => (
           <li key={contact}>
             <span>{contact}</span>
           </li>

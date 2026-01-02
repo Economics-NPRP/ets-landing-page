@@ -1,5 +1,5 @@
 'use client'
-import "../../styles/main/trading-steps.css"
+import "/src/styles/landing-page/main/trading-steps.css"
 import { TradingStepsContent } from "../main/content"
 import { motion, cubicBezier, useScroll, useMotionValueEvent, useTransform } from "motion/react"
 import { useRef, useState } from "react"

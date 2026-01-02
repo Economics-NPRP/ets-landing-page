@@ -1,5 +1,5 @@
-import '../../styles/core/header.css'
 import { useState } from 'react'
+import "/src/styles/landing-page/header.css"
 
 const Header = () => {
   const [isMobileMenuOpen, setMobileMenuOpen] = useState(false)

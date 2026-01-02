@@ -1,4 +1,4 @@
-import "../../styles/main/features.css"
+import "/src/styles/landing-page/main/features.css"
 import { FeaturesContent } from "../main/content"
 const Features = () => {
   return (

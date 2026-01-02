@@ -1,6 +1,6 @@
 import { Summary, QuickLinks, ContactUs } from "../footer"
 import { FooterContent } from "./content"
-import "../../styles/core/footer.css"
+import "/src/styles/landing-page/footer.css"
 
 const Footer = () => {
 
@@ -8,7 +8,7 @@ const Footer = () => {
     <footer>
       <div id="links-container">
         <Summary content={FooterContent} />
-        <QuickLinks content={FooterContent} /> 
+        <QuickLinks content={FooterContent} />
         <ContactUs content={FooterContent} />
         <img id="footer-logo" src={FooterContent.logo} height={110} alt="ets-logo" />
       </div>

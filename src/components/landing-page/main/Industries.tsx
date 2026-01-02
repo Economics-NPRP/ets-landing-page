@@ -1,4 +1,4 @@
-import "../../styles/main/industries.css"
+import "/src/styles/landing-page/main/industries.css"
 import { IndustriesContent } from "./content"
 
 const Industries = () => {

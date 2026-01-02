@@ -1,5 +1,5 @@
 import { FinalCTAContent } from "./content"
-import "../../styles/main/finalcta.css" 
+import "/src/styles/landing-page/main/finalcta.css" 
 
 const FinalCTA = () => {
   return (

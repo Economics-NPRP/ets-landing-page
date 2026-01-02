@@ -1,4 +1,4 @@
-import '../../styles/core/main.css'
+import '/src/styles/landing-page/main.css'
 import * as MainComponent from '../main'
 
 const Main = () => {

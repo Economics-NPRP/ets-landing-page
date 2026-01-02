@@ -1,6 +1,6 @@
-import "../../styles/main/video.css"
+import "/src/styles/landing-page/main/video.css"
 import ReactPlayer from "react-player"
-import Thumbnail from "../../../public/main/video/thumbnail.jpg"
+import Thumbnail from "/public/main/video/thumbnail.jpg"
 
 const Video = () => {
   return (

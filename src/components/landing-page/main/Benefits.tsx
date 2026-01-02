@@ -1,5 +1,5 @@
 import { BenefitsContent } from "./content"
-import "../../styles/main/benefits.css"
+import "/src/styles/landing-page/main/benefits.css"
 
 const Benefits = () => {
   return (
