@@ -1,6 +1,10 @@
+import Navigation from "/src/components/common/Navigation"
+
 const Tutorials = () => {
   return (
-    <div>Tutorials</div>
+    <>
+      <Navigation style="dark" />
+    </>
   )
 }
 

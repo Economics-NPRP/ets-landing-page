@@ -1,7 +1,9 @@
 "use client"
-import { useState } from 'react'
+import "/src/styles/common/navbar.css"
+import { useState } from "react"
 
-const Navigation = () => {
+const Navigation = ({ style = "light" }: { style?: ("light" | "dark") }) => {
+  
   const [isMobileMenuOpen, setMobileMenuOpen] = useState(false)
 
   const toggleMobileMenu = () => {
@@ -12,9 +14,9 @@ const Navigation = () => {
     <>
       <nav>
         <a href="#nav-desktop">
-          <img id="nav-logo" src="/logo.svg" alt="ets-logo" />
+          <img id="nav-logo" className={style} src="/logo.svg" alt="ets-logo" />
         </a>
-        <ul id='nav-desktop'>
+        <ul className={style} id='nav-desktop'>
           <li><a href="#features">Features</a></li>
           <li><a href="#industries">Industries</a></li>
           <li><a href="#benefits">Benefits</a></li>
@@ -22,7 +24,7 @@ const Navigation = () => {
         </ul>
         <div id="mobile-toggle" className={isMobileMenuOpen ? 'active' : ''} onClick={toggleMobileMenu}></div>
       </nav>
-      <ul onClick={toggleMobileMenu} id='nav-mobile' className={isMobileMenuOpen ? 'active' : ''}>
+      <ul onClick={toggleMobileMenu} id='nav-mobile' className={(isMobileMenuOpen ? 'active ' : ' ')+style}>
         <div className='close'></div>
         <li><a href="#features">Features</a></li>
         <li><a href="#industries">Industries</a></li>

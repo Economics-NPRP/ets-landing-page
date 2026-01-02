@@ -4,11 +4,11 @@ export const FooterContent = {
     description: "Transforming businesses through intelligent automation and AI - powered solutions.",
     linkedIn: {
       link: "#",
-      icon: "/footer/linkedin.svg"
+      icon: "/landing-page/footer/linkedin.svg"
     },
     facebook: {
       link: "#",
-      icon: "/footer/facebook.svg"
+      icon: "/landing-page/footer/facebook.svg"
     },
   },
   quickLinks: [

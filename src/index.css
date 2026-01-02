@@ -12,11 +12,16 @@
   font-optical-sizing: auto;
 }
 :root {
+  /* Constants */
   --ratio: 1;
+  /* Colors */
   --primary: #8A1538;
   --white: #FFFFFF;
   --light-gray: #F9FAFB;
   --gray: #656565;
+  --dark-gray: #2e2d2d;
+  /* Filters */
+  --primary-filter: brightness(0) saturate(100%) invert(13%) sepia(46%) saturate(3935%) hue-rotate(323deg) brightness(102%) contrast(100%);
 }
 
 h1, h2, h3, h4 {
