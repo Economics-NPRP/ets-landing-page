@@ -13,7 +13,7 @@ const Navigation = ({ style = "light" }: { style?: ("light" | "dark") }) => {
   return (
     <>
       <nav>
-        <a href="#nav-desktop">
+        <a href="/">
           <img id="nav-logo" className={style} src="/logo.svg" alt="ets-logo" />
         </a>
         <ul className={style} id='nav-desktop'>

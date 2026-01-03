@@ -5,7 +5,7 @@ type OptionProps = {
   url: string
 }
 
-type FirmTutorialsVideoProps = {
+type TutorialsVideoProps = {
   step: number | null
   handleStep: (action: "next" | "prev") => void
 }

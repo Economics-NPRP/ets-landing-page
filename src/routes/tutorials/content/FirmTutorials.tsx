@@ -1,7 +1,7 @@
 import { useQueryState } from "nuqs"
 
 import Navigation from "/src/components/common/Navigation"
-import { Video, Content } from "/src/components/tutorials/firm"
+import { Video, Content } from "/src/components/tutorials/content"
 
 import "/src/styles/tutorials/firm.css"
 
@@ -26,9 +26,9 @@ const FirmTutorials = () => {
   return (
     <>
       <Navigation style="dark" />
-      <div id="tut-f-container">
+      <div id="tut-container">
         <Video step={step} handleStep={handleStep} />
-        <Content step={step} />
+        <Content step={step} setStep={setStep} />
       </div>
     </>
   )

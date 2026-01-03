@@ -5,7 +5,7 @@ import { NuqsAdapter } from 'nuqs/adapters/react'
 import './index.css'
 import LandingPage from './routes/landing-page/LandingPage.tsx'
 import Tutorials from './routes/tutorials/Tutorials.tsx'
-import FirmTutorials from './routes/tutorials/firm/FirmTutorials.tsx'
+import FirmTutorials from './routes/tutorials/content/FirmTutorials.tsx'
 
 createRoot(document.getElementById('root')!).render(
   <StrictMode>
