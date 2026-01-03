@@ -1,4 +1,4 @@
-import { Header, Main, Footer } from "../../components/landing-page/core";
+import { Header, Main, Footer } from "/src/components/landing-page/core";
 
 function App() {
   return (

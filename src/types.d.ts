@@ -4,3 +4,8 @@ type OptionProps = {
   imageUrl: string
   url: string
 }
+
+type FirmTutorialsVideoProps = {
+  step: number | null
+  handleStep: (action: "next" | "prev") => void
+}
