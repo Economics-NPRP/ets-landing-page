@@ -1,0 +1,7 @@
+#tut-heading {
+  text-align: center;
+  font-size: calc(56px * var(--ratio));
+  font-weight: 700;
+  color: var(--primary);
+  padding: 156px 64px 0px 64px;
+}
