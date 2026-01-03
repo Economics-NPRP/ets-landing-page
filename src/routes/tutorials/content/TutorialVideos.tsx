@@ -1,17 +1,18 @@
 import { useQueryState } from "nuqs"
 
 import Navigation from "/src/components/common/Navigation"
+import { FirmTutorialsContent, GovernmentTutorialsContent } from "/src/components/tutorials/content/content"
 import { Video, Content } from "/src/components/tutorials/content"
 
 import "/src/styles/tutorials/firm.css"
 
-const FirmTutorials = () => {
+const TutorialVideos = ({ target = "firm" }: { target: "firm" | "government" }) => {
 
   const [step, setStep] = useQueryState("step", {
     defaultValue: "1"
   })
 
-  const maxSteps = 4
+  const maxSteps = target === "firm" ? FirmTutorialsContent.length : GovernmentTutorialsContent.length
 
   const handleStep = (action: "next" | "prev") => setStep(p => {
     if (!p) return "1"
@@ -27,11 +28,11 @@ const FirmTutorials = () => {
     <>
       <Navigation style="dark" />
       <div id="tut-container">
-        <Video step={step} handleStep={handleStep} />
-        <Content step={step} setStep={setStep} />
+        <Video step={step} handleStep={handleStep} target={target} />
+        <Content step={step} setStep={setStep} target={target} />
       </div>
     </>
   )
 }
 
-export default FirmTutorials
+export default TutorialVideos
