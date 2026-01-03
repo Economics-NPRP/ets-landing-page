@@ -6,7 +6,7 @@ type OptionProps = {
 }
 
 type TutorialsVideoProps = {
-  step: number | null
+  step: string | null
   handleStep: (action: "next" | "prev") => void
   target: "firm" | "government"
 }

@@ -8,11 +8,11 @@ const Video = ({ step, handleStep, target }: TutorialsVideoProps) => {
 
   return (
     <div id="tut-video">
-      <h2 id="tut-title">{content[step - 1]?.title}</h2>
-      <p id="tut-description">{content[step - 1]?.description}</p>
+      <h2 id="tut-title">{content[+step - 1]?.title}</h2>
+      <p id="tut-description">{content[+step - 1]?.description}</p>
       <div id="tut-video-container">
         <iframe 
-          src={content[step - 1]?.url} 
+          src={content[+step - 1]?.url} 
         ></iframe>
       </div>
       <div id="tut-buttons">
@@ -24,7 +24,7 @@ const Video = ({ step, handleStep, target }: TutorialsVideoProps) => {
           content.map((_, index) => (
             <div 
               key={"tut-progress-" + (index + 1)} 
-              className={"tut-progress-step " + (step - 1 >= index ? "done" : "pending")}
+              className={"tut-progress-step " + (+step - 1 >= index ? "done" : "pending")}
             ></div>
           ))
         }  
