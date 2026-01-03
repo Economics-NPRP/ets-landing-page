@@ -1,6 +1,7 @@
 "use client"
 import "/src/styles/common/navbar.css"
 import { useState } from "react"
+import { NavLink } from "react-router"
 
 const Navigation = ({ style = "light" }: { style?: ("light" | "dark") }) => {
   
@@ -12,7 +13,7 @@ const Navigation = ({ style = "light" }: { style?: ("light" | "dark") }) => {
 
   return (
     <>
-      <nav>
+      <nav className={style}>
         <a href="/">
           <img id="nav-logo" className={style} src="/logo.svg" alt="ets-logo" />
         </a>
@@ -29,6 +30,7 @@ const Navigation = ({ style = "light" }: { style?: ("light" | "dark") }) => {
         <li><a href="#features">Features</a></li>
         <li><a href="#industries">Industries</a></li>
         <li><a href="#benefits">Benefits</a></li>
+        <li><NavLink to="/tutorials">Tutorials</NavLink></li>
         <li><a href="https://platform.ets-gcc.org/login" target='_blank' className="nav-cta">Sign In</a></li>
       </ul>
     </>

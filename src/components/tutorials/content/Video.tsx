@@ -13,13 +13,21 @@ const Video = ({ step, handleStep, target }: TutorialsVideoProps) => {
       <div id="tut-video-container">
         <iframe 
           src={content[step - 1]?.url} 
-          width={1000}
-          height={1000 * 9 / 16}
         ></iframe>
       </div>
       <div id="tut-buttons">
         <button id="tut-prev" onClick={() => handleStep("prev")}>Previous</button>
         <button id="tut-next" onClick={() => handleStep("next")}>Next</button>
+      </div>
+      <div id="tut-progress">
+        {
+          content.map((_, index) => (
+            <div 
+              key={"tut-progress-" + (index + 1)} 
+              className={"tut-progress-step " + (step - 1 >= index ? "done" : "pending")}
+            ></div>
+          ))
+        }  
       </div>
     </div>
   )

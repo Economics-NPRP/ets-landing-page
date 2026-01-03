@@ -1,5 +1,6 @@
 import { FirmTutorialsContent, GovernmentTutorialsContent } from "./content"
-import "/src/styles/tutorials/firm.css"
+import "/src/styles/tutorials/main.css"
+
 const ContentList = ({ step, setStep, target }: TutorialsContentListProps) => {
 
   if (step === null) return <></>

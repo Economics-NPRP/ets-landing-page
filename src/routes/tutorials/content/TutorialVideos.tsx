@@ -4,7 +4,7 @@ import Navigation from "/src/components/common/Navigation"
 import { FirmTutorialsContent, GovernmentTutorialsContent } from "/src/components/tutorials/content/content"
 import { Video, Content } from "/src/components/tutorials/content"
 
-import "/src/styles/tutorials/firm.css"
+import "/src/styles/tutorials/main.css"
 
 const TutorialVideos = ({ target = "firm" }: { target: "firm" | "government" }) => {
 

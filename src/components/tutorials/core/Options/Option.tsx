@@ -1,6 +1,8 @@
+import { NavLink } from "react-router"
+
 const Option = ({ title, description, imageUrl, url }: OptionProps) => {
   return (
-    <a href={url} style={{ textDecoration: "none" }}>
+    <NavLink to={url} style={{ textDecoration: "none" }}>
       <figure className='tut-option'>
         <figcaption className='tut-option-text'>
           <h2>{title}</h2>
@@ -11,7 +13,7 @@ const Option = ({ title, description, imageUrl, url }: OptionProps) => {
           <div className="tut-option-overlay"></div>
         </div>
       </figure>
-    </a>
+    </NavLink>
   )
 }
 

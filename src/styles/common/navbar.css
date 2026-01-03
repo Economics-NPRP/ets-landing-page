@@ -106,6 +106,13 @@ nav {
     } 
   }
 }
+nav.dark {
+  justify-content: center;
+  gap: 10%;
+  #nav-desktop.dark > li > a.nav-cta {
+    box-shadow: 0px 0px 0px 2px var(--white);
+  }
+}
 #nav-mobile {
   position: fixed;
   top: 0;
@@ -168,5 +175,8 @@ nav {
     #nav-desktop {
       display: none;
     }
+  }
+  nav.dark {
+    justify-content: space-around;
   }
 }

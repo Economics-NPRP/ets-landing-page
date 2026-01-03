@@ -1,3 +1,5 @@
+import { NavLink } from "react-router"
+
 const Hero = () => {
   return (
     <section id='header-text'>
@@ -6,7 +8,7 @@ const Hero = () => {
         platform <br />that simplifies permit allocation, bidding, and compliance.</p>
       <div id="header-cta-group">
         <a href="https://platform.ets-gcc.org" target='_blank' className="header-cta-primary">Get Started</a>
-        <a href="/tutorials" className="header-cta-secondary">How to Use</a>
+        <NavLink to="/tutorials" className="header-cta-secondary">How to Use</NavLink>
       </div>
     </section>
   )
