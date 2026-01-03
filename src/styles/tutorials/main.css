@@ -91,3 +91,10 @@
     }
   }
 }
+
+@media (max-width: 850px) {
+  #tut-heading {
+    font-size: 40px;
+    padding: 156px 36px 0px 36px;
+  }
+}

@@ -13,8 +13,8 @@
     display: flex;
     position: relative;
     height: 200px;
-    max-width: 1000px;
-    margin: 56px 0px;
+    width: min(90%, 1000px);
+    margin: 56px auto;
     gap: 32px;
     background-color: var(--primary);
     border-radius: 12px;
@@ -36,7 +36,7 @@
     .tut-option-image {
       position: absolute;
       right: 0;
-      width: 500px;
+      width: min(100%, 500px);
       height: 100%;
       border-radius: 12px;
       overflow: hidden;
@@ -63,6 +63,19 @@
         img {
           scale: 1.1;
         }
+      }
+    }
+  }
+}
+
+@media (max-width: 800px) {
+  #tut-options {
+    padding-top: 40px;
+    .tut-option {
+      margin: 20px auto;
+      height: auto;
+      .tut-option-text {
+        width: 100%;
       }
     }
   }
