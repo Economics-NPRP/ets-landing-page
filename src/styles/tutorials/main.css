@@ -127,6 +127,11 @@
 }
 @media (max-width: 1500px) {
   #tut-container {
+    gap: 10%;
+  }
+}
+@media (max-width: 1250px) {
+  #tut-container {
     gap: 0;
   }
 }

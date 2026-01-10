@@ -7,8 +7,8 @@ const Hero = () => {
       <p>ETS connects governments, businesses, and stakeholders through a modern
         platform <br />that simplifies permit allocation, bidding, and compliance.</p>
       <div id="header-cta-group">
-        <a href="https://platform.ets-gcc.org" target='_blank' className="header-cta-primary">Get Started</a>
-        <NavLink to="/tutorials" className="header-cta-secondary">How to Use</NavLink>
+        <NavLink to="/tutorials" className="header-cta-primary">How to Use</NavLink>
+        <a href="https://platform.ets-gcc.org" target='_blank' className="header-cta-secondary">Get Started</a>
       </div>
     </section>
   )

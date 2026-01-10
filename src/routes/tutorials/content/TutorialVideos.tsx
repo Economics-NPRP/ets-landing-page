@@ -1,6 +1,8 @@
 import { useQueryState } from "nuqs"
 
 import Navigation from "/src/components/common/Navigation"
+import Back from "/src/components/common/Back"
+
 import { FirmTutorialsContent, GovernmentTutorialsContent } from "/src/components/tutorials/content/content"
 import { Video, Content } from "/src/components/tutorials/content"
 
@@ -26,6 +28,7 @@ const TutorialVideos = ({ target = "firm" }: { target: "firm" | "government" }) 
 
   return (
     <>
+      <Back link="/tutorials" />
       <Navigation style="dark" />
       <div id="tut-container">
         <Video step={step} handleStep={handleStep} target={target} />
