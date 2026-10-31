@@ -29,9 +29,9 @@ const Hero = () => {
       <motion.div className="hero__inner" style={{ y: contentY, opacity: contentOpacity }}>
         <div className="hero__content">
           <motion.span className="tag" {...rise(0.8)}>Emission Trading System</motion.span>
-          <h1><SplitText text="Transparent & Secure Permit Auctions for Regulated Industries" delay={0.85} onMount /></h1>
+          <h1><SplitText text="Trade Emission Permits and Carbon Credits on One Transparent Platform" delay={0.85} onMount /></h1>
           <motion.p {...rise(1.3)}>
-            ETS connects governments, businesses, and stakeholders through a modern platform that simplifies permit allocation, bidding, and compliance.
+            ETS brings governments, businesses and stakeholders together to auction, resell and buy both permits and verified carbon credits, with every trade reviewed and recorded.
           </motion.p>
           <motion.div className="hero__ctas" {...rise(1.45)}>
             <a href={REGISTER_URL} target="_blank" rel="noreferrer" className="btn btn--filled btn--md">Register Now<i className="ti ti-arrow-right" /></a>

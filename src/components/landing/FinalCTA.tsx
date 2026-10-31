@@ -5,9 +5,9 @@ const FinalCTA = () => (
   <section id="finalcta" className="cta">
     <div className="container cta__inner">
       <div className="cta__text">
-        <h2><SplitText text="Start Trading Permits with Confidence" stagger={0.07} /></h2>
+        <h2><SplitText text="Start Trading Permits and Credits with Confidence" stagger={0.07} /></h2>
         <Reveal delay={0.3} y={20}>
-          <p>Join thousands of organizations already using ETS to streamline their emission trading processes</p>
+          <p>One platform for regulated industries to auction, resell, and buy emission permits and carbon credits</p>
         </Reveal>
       </div>
       <Reveal delay={0.45} y={20}>

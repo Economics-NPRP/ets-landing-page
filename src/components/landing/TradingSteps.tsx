@@ -6,9 +6,9 @@ import { ease } from "../easing"
 
 const STEPS = [
   ["Register & Verify", "Create an account as a business, government, or stakeholder.", "register.jpg"],
-  ["Browse Auctions", "Explore auctions related to your category, sector and industry using our advanced search system.", "browse.jpg"],
-  ["Bid in Real-Time", "Participate in live auctions securely.", "bid.jpg"],
-  ["Manage & Track", "Monitor permits, transactions, and compliance in your dashboard.", "track.jpg"],
+  ["Browse the Market", "Explore permit and carbon credit offers by sector and subsector using our advanced search system.", "browse.jpg"],
+  ["Bid or Buy", "Join live auctions or buy directly on the spot market, for permits and credits alike.", "bid.jpg"],
+  ["Manage & Track", "Monitor your permits, credits, and transactions in one dashboard.", "track.jpg"],
 ]
 
 const StepBar = ({ progress, i }: { progress: MotionValue<number>; i: number }) => {
@@ -38,7 +38,7 @@ const TradingSteps = () => {
     <section id="trading-steps" ref={ref} className="steps">
       <div className="steps__sticky">
         <div className="container steps__inner">
-          <SectionHead num="02" title="Start trading permits in simple steps" dark />
+          <SectionHead num="02" title="Start trading permits and credits in simple steps" dark />
           <div className="steps__body">
             <div className="steps__list">
               {STEPS.map(([title, desc], i) => (

@@ -1,9 +1,9 @@
 import { Reveal, SplitText } from "../motion"
 
 const BENEFITS = [
-  ["For Governments", "building-bank", "Streamlined allocation & oversight", "Efficient permit distribution, real-time market monitoring, and comprehensive regulatory compliance tracking."],
-  ["For Businesses", "users", "Fair access & reduced compliance hassle", "Equal opportunity bidding, simplified compliance processes, and transparent market pricing mechanisms."],
-  ["For Stakeholders", "eye", "Transparent, competitive, and science-based auctions", "Complete market visibility, historical data access, and analytical tools for informed decision making."],
+  ["For Governments", "building-bank", "Oversight of both markets", "Allocate permits, verify credit registrations, and monitor all trading in real time."],
+  ["For Businesses", "users", "Two ways to manage your footprint", "Buy the permits you need and turn your verified reductions into tradable credits."],
+  ["For Stakeholders", "eye", "Full visibility on both assets", "Prices, history, and analytics for permits and credits alike."],
 ]
 
 const Benefits = () => (
