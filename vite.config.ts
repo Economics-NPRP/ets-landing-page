@@ -8,4 +8,10 @@ export default defineConfig({
     build: {
         sourcemap: false,
     },
+    // dev: same-origin /v1 → local backend, so no CORS entry is needed (see .env.development)
+    server: {
+        proxy: {
+            '/v1': 'http://localhost:8080',
+        },
+    },
 })
