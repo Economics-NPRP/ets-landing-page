@@ -78,7 +78,8 @@ export const Magnetic = ({ children, strength = 0.3 }: { children: ReactNode; st
 
 /**
  * Route wrapper: a maroon curtain lifts off the page on enter and drops back
- * over it on exit (AnimatePresence in main.tsx waits for the exit).
+ * over it on exit (AnimatePresence in App.tsx waits for the exit). Both wipe with
+ * clip-path, not scale, so the centred logo is swiped with the curtain, never squashed or faded.
  */
 export const Page = ({ children }: { children: ReactNode }) => {
   const { hash } = useLocation()
@@ -98,21 +99,21 @@ export const Page = ({ children }: { children: ReactNode }) => {
       {children}
       <motion.div
         className="curtain"
-        style={{ originY: 0 }}
-        initial={{ scaleY: 1 }}
-        animate={{ scaleY: 0 }}
+        initial={{ clipPath: "inset(0% 0 0% 0)" }}
+        animate={{ clipPath: "inset(0% 0 100% 0)" }}
         transition={{ duration: 0.9, ease: curtainEase, delay: 0.25 }}
       >
-        <motion.img src="/logos/ets-white.svg" alt="" initial={{ opacity: 1 }} animate={{ opacity: 0 }} transition={{ duration: 0.3 }} />
+        <img src="/logos/ets-white.svg" alt="" />
       </motion.div>
       <motion.div
         className="curtain"
-        style={{ originY: 1 }}
-        initial={{ scaleY: 0 }}
-        animate={{ scaleY: 0 }}
-        exit={{ scaleY: 1 }}
+        initial={{ clipPath: "inset(100% 0 0% 0)" }}
+        animate={{ clipPath: "inset(100% 0 0% 0)" }}
+        exit={{ clipPath: "inset(0% 0 0% 0)" }}
         transition={{ duration: 0.6, ease: curtainEase }}
-      />
+      >
+        <img src="/logos/ets-white.svg" alt="" />
+      </motion.div>
     </>
   )
 }
