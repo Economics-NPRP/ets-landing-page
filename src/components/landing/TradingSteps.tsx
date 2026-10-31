@@ -5,10 +5,10 @@ import { SectionHead } from "../motion"
 import { ease } from "../easing"
 
 const STEPS = [
-  ["Register & Verify", "Create an account as a business, government, or stakeholder.", "1.png"],
-  ["Browse Auctions", "Explore auctions related to your category, sector and industry using our advanced search system.", "3.png"],
-  ["Bid in Real-Time", "Participate in live auctions securely.", "2.png"],
-  ["Manage & Track", "Monitor permits, transactions, and compliance in your dashboard.", "4.png"],
+  ["Register & Verify", "Create an account as a business, government, or stakeholder.", "register.jpg"],
+  ["Browse Auctions", "Explore auctions related to your category, sector and industry using our advanced search system.", "browse.jpg"],
+  ["Bid in Real-Time", "Participate in live auctions securely.", "bid.jpg"],
+  ["Manage & Track", "Monitor permits, transactions, and compliance in your dashboard.", "track.jpg"],
 ]
 
 const StepBar = ({ progress, i }: { progress: MotionValue<number>; i: number }) => {
