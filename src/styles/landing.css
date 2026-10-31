@@ -371,12 +371,11 @@
   border: 1px solid var(--maroon-2);
   color: var(--maroon-6);
   font-size: 22px;
-  transition: background 300ms ease, color 300ms ease, transform 500ms var(--ease-out);
+  transition: background 300ms ease, color 300ms ease;
 }
 .feature:hover .feature__icon {
   background: var(--maroon-6);
   color: #fff;
-  transform: rotate(-8deg);
 }
 .feature h3 {
   font-size: clamp(18px, 1.8vw, 24px);
