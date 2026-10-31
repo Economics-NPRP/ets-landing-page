@@ -10,14 +10,9 @@
     "preview": "vite preview"
   },
   "dependencies": {
-    "@fortawesome/fontawesome-svg-core": "^7.1.0",
-    "@fortawesome/free-solid-svg-icons": "^7.1.0",
-    "@fortawesome/react-fontawesome": "^3.1.1",
     "motion": "^12.23.26",
-    "nuqs": "^2.8.6",
     "react": "^19.2.3",
     "react-dom": "^19.2.3",
-    "react-player": "^3.4.0",
     "react-router": "^7.11.0"
   },
   "devDependencies": {

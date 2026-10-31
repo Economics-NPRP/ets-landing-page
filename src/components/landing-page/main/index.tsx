@@ -1,6 +1,0 @@
-export { default as TradingSteps } from './TradingSteps'
-export { default as Features } from './Features'
-export { default as Industries } from './Industries'
-export { default as Benefits } from './Benefits'
-export { default as FinalCTA } from './FinalCTA'
-export { default as Video } from './Video'
