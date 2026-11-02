@@ -29,7 +29,7 @@ const Hub = ({ track, watched }: { track: Track; watched: Record<string, boolean
             <Reveal key={tut.title} delay={(i % 3) * 0.08}>
               <Link to={`?t=${i}&v=${next}`} className="card tut-card">
                 <div className="tut-card__thumb">
-                  <img src={`/tutorials/thumbnails/${tut.thumbnail}.jpg`} alt="" loading="lazy" />
+                  <img src={`/tutorials/thumbnails/${tut.thumbnail}.avif`} alt="" loading="lazy" />
                   <span className="tut-card__play"><i className="ti ti-player-play-filled" /></span>
                 </div>
                 <div className="tut-card__body">

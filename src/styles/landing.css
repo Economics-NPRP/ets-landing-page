@@ -40,7 +40,7 @@
 .hero__bg {
   position: absolute;
   inset: -4% 0 -30%;
-  background: url('/landing-page/header/bg.jpg') center / cover no-repeat;
+  background: url('/landing-page/header/bg.avif') center / cover no-repeat;
 }
 .hero__scrim {
   position: absolute;
