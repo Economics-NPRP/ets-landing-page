@@ -66,8 +66,54 @@ export const TRACKS: Record<Track, { label: string; path: string; icon: string; 
     img: "https://images.unsplash.com/photo-1579389083078-4e7018379f7e?q=80&w=1200&auto=format&fit=crop",
     desc: "Discover the administrative features of ETS and how to manage your organization's account effectively.",
     tutorials: [
-      { title: "Firm Approval", thumbnail: "gov-01", videos: [["Firm Approval", "1DmJV57j4Xx-EJAdrJHnziT1JVuw44gBB"]] },
-      { title: "Cycle & Auction Creation", thumbnail: "gov-02", videos: [["Cycle & Auction Creation", "1cok2Sy8DE8EEuEFSV0igjmJrdgphTZ5T"]] },
+      {
+        title: "Setting up your government team",
+        thumbnail: "gov-01",
+        videos: [
+          ["Add an administrator", "18yWS4YSP58nb8_-ZPEBLLPhU287rx2tY"],
+          ["Activate your account and open your workspace", "1Nawsft153gzfXkwK7EHEhY_ZCCteM3p4"],
+        ],
+      },
+      { title: "Approving firms", thumbnail: "gov-02", videos: [["Review firm applications", "1F2P7sW3KMn7_u6ldFs8JQRm6L5qS1lkZ"]] },
+      { title: "Setting up a compliance cycle", thumbnail: "gov-03", videos: [["Create a cycle", "1DbflJEof3j1rUY3dOlQaWCLRwneiu3hB"]] },
+      {
+        title: "Creating a primary auction",
+        thumbnail: "gov-04",
+        videos: [
+          ["Create a primary auction", "1K5oaM7UYNnCDAZGfPNfaTOGLwmSPRH6s"],
+          ["Approve the quantity", "1Gop_fpGcbAmrm-b20m80A3kctUTJgS63"],
+          ["Set the pricing terms", "1Zqr6F3RoT-1Rh-t3KJvrLah0uFZkEqVW"],
+          ["Final approval", "15jcj6wJnHryIoDoJmspHtdMU4CIGrmpD"],
+        ],
+      },
+      { title: "Launching the cycle", thumbnail: "gov-05", videos: [["Approve and start the cycle", "1hC4ATI7jKPqUazlHyRorIa_A1DPHlsob"]] },
+      { title: "After the auction", thumbnail: "gov-06", videos: [["Confirm a firm's payment", "1z6qiSREcHsUDEt_9NnVkLfmAC1GK1Kvi"]] },
+      {
+        title: "Overseeing the secondary market",
+        thumbnail: "gov-07",
+        videos: [
+          ["Assign the auditors", "1vQgQEA7SSnC1AorgfUweL4NB_sdQMSVR"],
+          ["Review the firm's holdings", "1vTLQnsSh6paM-2dO82NLhBoVkwuv14gi"],
+          ["Set the escrow terms", "15PzbxoZx5xrElUrTv9ci4rLwmpBNaYw5"],
+          ["Final sign-off", "1Sir9HtGuItAqESijaJLteQ_SXwqOhEC7"],
+        ],
+      },
+      {
+        title: "Verifying carbon credits",
+        thumbnail: "gov-08",
+        videos: [
+          ["Verify the evidence", "1ldoyPOpBQTRUQYomer5xDE3RBDql_3ip"],
+          ["Approve the credits", "1LtANs5hw5q1n31fPWSE5x-9Mu6-kccwJ"],
+        ],
+      },
+      {
+        title: "Government credits",
+        thumbnail: "gov-09",
+        videos: [
+          ["Register a government credits lot", "1LLKvJQXorBAczZrriVSyHtOGLA76btXG"],
+          ["Auction government credits", "1aw7Mk43u3f30ws6tNvVNjHugQCvd1joW"],
+        ],
+      },
     ],
   },
 }

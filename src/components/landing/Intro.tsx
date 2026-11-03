@@ -3,7 +3,7 @@ import { motion, useMotionTemplate, useMotionValue, useScroll, useSpring, useTra
 import { SectionHead } from "../motion"
 
 const VIDEO = "/landing-page/main/video/video.mp4"
-const POSTER = "/landing-page/main/video/thumbnail.jpg"
+const POSTER = "/landing-page/main/video/thumbnail.webp"
 
 const Intro = () => {
   const frame = useRef<HTMLDivElement>(null)

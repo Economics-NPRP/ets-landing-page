@@ -28,7 +28,7 @@ const Industries = () => (
           viewport={{ once: true, margin: "0px 0px -15% 0px" }}
           transition={{ duration: 1, ease, delay: (i % 3) * 0.12 }}
         >
-          <img src={`/sectors/${id}.jpg`} alt="" loading="lazy" />
+          <img src={`/sectors/${id}.avif`} alt="" loading="lazy" />
           <span className="sector__tint" />
           <span className="sector__shade" />
           <div className="sector__content">
